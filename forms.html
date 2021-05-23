@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./forms.css" />
+    <title>Forms demo</title>
+  </head>
+  <body>
+    <h1>Forms demo</h1>
+    <form
+      action="https://webhook.site/09561d1e-b73e-4bc3-b514-64c6e0cff6df"
+      method="post"
+    >
+      <div>
+        <label for="username">Username</label>
+        <input type="text" name="Username" id="username" value="username" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="Password" id="password" />
+      </div>
+      <div>
+        <label for="date">Date</label>
+        <input type="date" name="Date" id="date" />
+      </div>
+
+      <select name="number" id="number">
+        <option value="">Choose</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+
+      <label for="volume">Volume</label>
+      <input type="range" name="volume" id="volume" min="0" max="100" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <h1>Race Registration!</h1>
+    <form
+      action="https://webhook.site/09561d1e-b73e-4bc3-b514-64c6e0cff6df"
+      method="POST"
+    >
+      <label for="first-name">First Name</label>
+      <input type="text" name="first-name" id="first-name" required />
+
+      <label for="last-name">Last Name</label>
+      <input type="text" name="last-name" id="last-name" required />
+
+      <p>Select a race:</p>
+      <div>
+        <input
+          type="radio"
+          name="length"
+          id="fun-run"
+          value="funrun"
+          required
+        />
+        <label for="length">Fun Run 5k</label>
+      </div>
+
+      <div>
+        <input
+          type="radio"
+          name="length"
+          id="half-marathon"
+          value="half"
+          required
+        />
+        <label for="length">Half Marathon</label>
+      </div>
+
+      <div>
+        <input
+          type="radio"
+          name="length"
+          id="full-marathon"
+          value="full"
+          required
+        />
+        <label for="length">Full Marathon</label>
+      </div>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required />
+
+      <div>
+        <label for="age">Select Age Group</label>
+        <select name="age" id="age">
+          <option value="0-18"><18</option>
+          <option value="19-30">19-30</option>
+          <option value="31-50">31-50</option>
+          <option value="51+">51+</option>
+        </select>
+      </div>
+
+      <button type="submit">Register!</button>
+    </form>
+  </body>
+</html>

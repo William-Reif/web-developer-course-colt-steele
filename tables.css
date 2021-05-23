@@ -1,0 +1,26 @@
+* {
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid blue;
+}
+
+th {
+  border: 1px solid red;
+}
+
+#split {
+  display: flex;
+  flex-direction: column;
+}
+
+thead,
+tfoot {
+  background-color: #3f87a6;
+  color: #fff;
+}
+
+input[type="radio"] {
+  color: red;
+}

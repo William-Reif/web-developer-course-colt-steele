@@ -3,16 +3,17 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.blurb h2 {
-  color: #ea1c2c;
-  font-weight: 100;
-  font-size: 2.5rem;
-}
-
-.blurb p {
-  color: #f498b8;
-  font-size: 1.125rem;
-  line-height: 2;
+.blurb {
+  h2 {
+    color: #ea1c2c;
+    font-weight: 100;
+    font-size: 2.5rem;
+  }
+  p {
+    color: #f498b8;
+    font-size: 1.125rem;
+    line-height: 2;
+  }
 }
 
 h1 {
@@ -27,26 +28,24 @@ h1 {
   font-size: 1.5rem;
   font-weight: 100;
   color: white;
-}
-
-#main-navbar a:hover {
-  color: #ea1c2c;
+  &:hover {
+    color: #ea1c2c;
+  }
 }
 
 #heading-group {
   font-size: 3.5rem;
-}
 
-#heading-group span {
-  color: #ea1c2c;
+  span {
+    color: #ea1c2c;
+  }
 }
 
 .navbar.scrolled {
-  background: #dec0de;
+  background: rgb(222, 192, 222);
 }
 
 .navbar {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -55,4 +54,3 @@ h1 {
     font-size: 3rem;
   }
 }
-/*# sourceMappingURL=app.css.map */

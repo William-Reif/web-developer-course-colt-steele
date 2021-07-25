@@ -79,3 +79,27 @@ const callFakeRequest = async () => {
     console.log(e);
   }
 };
+
+const getData = (url) => {
+  return new Promise((resolve, reject) => {
+    const randomNumber = Math.random;
+    setTimeout(() => {
+      if (randomNumber > 0.5) {
+        console.log(randomNumber);
+        resolve(url);
+      }
+      reject('error message from: ' + url);
+      throw 'erorr from ' + url;
+    }, 1000);
+  });
+};
+
+const callGetData = async () => {
+  try {
+    const d1 = await getData('/page1');
+    const d2 = await getData('/page2');
+    console.log(d1, d2);
+  } catch (e) {
+    console.log(e);
+  }
+};
